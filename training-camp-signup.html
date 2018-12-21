@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Megan Hayes for COMP112, April 2018 -->
+<html lang="en">
+<head>
+	<title>Training Camp Sign-up | The University of Otago Tiddlywinks Club</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="tiddlywinksStyle.css">
+</head>
+<body>
+	<div class="overlay"></div>
+	<header>
+		<h1>The University of Otago Tiddlywinks Club</h1>
+	</header>
+
+	<!-- Links to navigate to the other pages on the website. -->
+	<nav>
+		<a>Home</a>
+		<a href="about.html">About</a>
+		<a href="gameplay.html">Gameplay</a>
+		<a href="rankings.html">Current Club Rankings</a>
+	</nav>
+	<div class="sidebar">
+		<h3>WEEKLY:</h3>
+		<ul>
+			<li><strong>Tuesdays 7PM<br>
+				Clubs and Socs<br>
+				Room 2.14</strong>
+			</li>
+			<li><strong>Fridays 8PM<br>
+				The Cavern Tavern</strong>
+			</li>
+		</ul>
+		<p><strong>SIGN UP TO OUR TRAINING CAMP!</strong></p>
+	</div>
+	<div class="main">
+		<!-- Form for entering information about training camp attendance. -->
+		<form method="get" enctype="appliveganion/x-www-form-urlencoded" action="http://www.cs.otago.ac.nz/112bin/112formslab.cgi">
+			<div>
+				<!-- Email address to which the results of this form will be sent. -->
+				<input type="hidden" name="recipient" value="hayme294@Otherent.otago.ac.nz">
+				<!-- The subject of the email resulting from this form. -->
+				<input type="hidden" name="subject" value="COMP112 Lab 15 Review Activity">
+				<!-- The page the user is sent to after they submit the form; specified by an absolute URL. -->
+				<input type="hidden" name="followup-page" value="http://www.cs.otago.ac.nz/comp112/followup.html">
+			</div>
+			<fieldset class="textInputs">
+				<legend>Contact Details</legend>
+				<div>
+				<ul>
+					<li>
+						<label for="name">Name: </label>
+						<input type="text" name="name" id="name" placeholder="Please enter your name" required pattern="[A-Za-z'\s\-]+">
+					</li>
+					<li>
+						<label for="sender">Email address: </label>
+						<input type="email" name="sender" id="sender" placeholder="Please enter your email" required>
+					</li>
+				</ul>
+			</div>
+			</fieldset>
+			<fieldset>
+				<legend>Membership Status</legend>
+				<ul>
+					<li class="buttonInputs">
+						<label>
+							<input type="radio" name="membership" id="regular" value="regular" title="Click if you are a regular club member" required>Regular
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="radio" name="membership" value="newbie" id="newbie" title="Click if you are a casual member or have never played before" required>Casual/total newbie
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Preferred Date</legend>
+				<ul>
+					<li class="buttonInputs">
+						<label>
+							<input type="radio" name="date" id="regular" value="regular" title="Click if you are a regular club member" required>Regular
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="radio" name="date" value="newbie" id="newbie" title="Click if you are a casual member or have never played before" required>Casual/total newbie
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Comments</legend>
+				<label for="comments">
+					<textarea cols="40" rows="4" name="comments" id="comments" title="Any additional comments regarding preferences for your toyger.">Add your comments here</textarea>
+				</label>
+			</fieldset>
+			<fieldset> <!-- Make this a set of checkboxes!!!!! -->
+				<legend>Dietary Requirements (for lunchtime pizza!)</legend>
+				<label>
+					<select name="dietary requirements">
+						<option value="None">None</option>
+						<option value="Vegetarian">Vegetarian</option>
+						<option value="Vegan">Vegan</option>
+						<option value="Dairy free">Dairy free</option>
+						<option value="Gluten free">Gluten free</option>
+						<option value="Seafood allergy">Seafood allergy</option>
+					</select>
+				</label>
+				<ul>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="vegetarian" value="vegetarian">vegetarian
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="vegan" value="vegan">vegan
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="dairy free" value="dairy free">dairy free
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="gluten free" value="gluten free">gluten free
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="seafood allergy" value="seafood allergy">seafood allergy
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="Other" value="Other">Other
+						</label>
+					</li>
+					<li class="buttonInputs">
+						<label>
+							<input type="checkbox" name="dietary" id="None" value="None">None
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<label><input type="submit" value="Submit"></label>
+				<label><input type="reset" name="Reset"></label>
+			</fieldset>
+		</form>
+	</div>
+	<footer>
+		This website was created for a University project. The content is largely fictional and no services are actually being offered.
+	</footer>
+</body>
+</html>

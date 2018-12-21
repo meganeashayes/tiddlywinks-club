@@ -1,0 +1,325 @@
+/* Stylesheet for Tiddlywinks website.
+*  COMP112 Assignment 2018
+*  @author Megan Hayes
+*/
+
+body{
+  color: #000000;
+  background-color: #FFFFFF;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 1500px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 32px;
+}
+
+.main h3 {
+  font-size: 24px;
+}
+
+.main h4 {
+  font-size: 20px;
+}
+
+/*
+** Styling for the website header.
+*/
+header {
+  background-color: rgba(255,153,0, 49%);
+  color: inherit;
+  background-image: url("images/four-colours-tiddlywinks.jpg");
+  height: 270px;
+  font-family: "Century Gothic", Geneva, sans-serif;
+  font-size: 25px;
+}
+
+header h1 {
+  background-color: rgba(255,191,0, 67%);
+  a:link: #FFFFFF;
+  a:hover: underline;
+  float: right;
+  margin-top: 50px;
+  padding: 20px 5px;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 270px;
+  background-color: rgba(255,153,0, 29%);
+  color: inherit;
+}
+
+.tiddlywinksPlayers {
+  float: right;
+}
+
+.calendar {
+  clear: both;
+  padding-bottom: 20px;
+}
+
+p a:link {
+  color: #4A86E8;
+  background-color: inherit;
+}
+
+/*
+** Styling for the navigation bar.
+*/
+nav {
+  background-color: #2e2e2e;
+  color: #FFFFFF;;
+  width: 100%;
+  height: 70px;
+  /*needs to be a background colour*/
+}
+
+nav a:link {
+  color: #FFFFFF;
+  background-color: inherit;
+}
+
+nav a:visited{
+  color: rgba(255,153,0,100%);
+  background-color: inherit;
+}
+
+nav a{
+  display: block;
+  width: 21%;
+  margin: 10px 10px 10px 10px;
+  font-size: 28px;
+  font-family: "Century Gothic", Arial, sans-serif;
+  text-align: center;
+  float: left;
+}
+
+.buttonForm {
+    background-color: #4A86E8; /* Green */
+    border: none;
+    color: #000000;
+    height: 140px;
+    width: 140px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.button {
+    background-color: #4A86E8; /* Green */
+    border: none;
+    color: #000000;
+    height: 140px;
+    width: 140px;
+    padding: 20px;
+    font-family: "Century Gothic", Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/*
+** Styling for the sidebar, which spans from the bottom of the navigation bar
+** to the top of the footer on each page.
+*/
+.sidebar {
+  background-color: rgba(255,191,0, 47%);
+  color: inherit;
+  font-size: 20px;
+  position: absolute;
+  top: 340px;
+  bottom: 50px;
+  width: 260px;
+  /*height: 100%;*/
+  /*padding-bottom: 500px;*/
+  padding-left: 25px;
+}
+
+.main {
+  float: right;
+  width: 1200px;
+  margin-left: 150px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.indexImg {
+  float: right;
+}
+
+section {
+  width: 845px;
+
+}
+
+section h2 {
+  text-align: center;
+}
+
+/*
+** Styling for the table elements on the website.
+*/
+table {
+  background-color: #9DBFF5;
+  color: inherit;
+  width: 100%;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+table th {
+  padding: 12px;
+  color: inherit;
+  background-color: #6FA1EF;
+}
+
+table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.match {
+  width: 700px;
+}
+
+/*
+** Styling for the coloured boxes which contain information about the
+** pages extending from the home page on the website.
+*/
+.about h4 {
+  background-color: #4A86E8;
+  opacity: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.about {
+  background-color: rgba(74,134,232, 47%);
+  color: inherit;
+  text-align: justify;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 250px;
+  float: left;
+  margin: 10px 20px;
+}
+
+.gameplay h4 {
+  background-color: #009688;
+  opacity: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.gameplay {
+  background-color: rgba(0,150,136, 47%);
+  text-align: justify;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 250px;
+  float: left;
+  margin: 10px 20px;
+}
+
+.ranking h4 {
+  background-color: #980000;
+  opacity: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ranking {
+  background-color: rgba(152,0,0,47%);
+  color: inherit;
+  text-align: justify;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 250px;
+  float: left;
+  margin: 10px 20px;
+}
+
+/* Form styling. */
+form {
+  background-color: #4A86E8;
+  color: #FFFFFF;
+  boxes: #9DBFF5;
+  width: 733px;
+  border-style: none;
+  padding: 20px;
+  margin: 20px;
+}
+
+form ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+  float: left;
+}
+
+form legend {
+  display: block;
+  font-family: "Century Gothic", Helvetica, sans-serif;
+  float: left;
+  width: 150px;
+  padding-right: 50px;
+}
+
+form fieldset {
+  border-style: none;
+}
+
+#regular, #newbie {
+  background-color: #9DBFF5;
+  color: inherit;
+}
+
+/* Footer styling. Appears at the bottom of each page and spans the width
+*  of the page.
+*/
+footer {
+  background-color: rgba(255,191,0, 47%);
+  color: inherit;
+  clear: both;
+  font-size: small;
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
